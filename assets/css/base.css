@@ -4,6 +4,9 @@
     --black-color:#000 !important;
     --text-color:#333 !important;
     --border-color:#dbdbdb !important;
+    --header-height:120px;
+    --navbar-height:30px;
+    --header-with-search-height:calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -60,6 +63,10 @@ html {
     justify-content: center;
     align-items: center;
     animation: fadeIn linear 0.1s;
+    display:none;
+}
+.modal.open {
+    display:flex;
 }
 .modal__overlay{
     position:absolute;
